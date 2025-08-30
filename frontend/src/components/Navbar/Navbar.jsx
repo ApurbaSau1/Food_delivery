@@ -14,8 +14,8 @@ const Navbar = ({setShowLogin}) => {
       localStorage.removeItem("token");
       setToken("");
         setShowLogin(false);
-        window.location.reload(); // Reload the page to reflect changes
         navigate('/'); // Navigate to home page after logout
+        window.location.reload(); // Reload the page to reflect changes
     }
   return (
     <div className='navbar'>
