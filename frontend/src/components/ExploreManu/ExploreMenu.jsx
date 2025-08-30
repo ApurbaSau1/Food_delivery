@@ -41,7 +41,7 @@ useEffect(() => {
         <div className="explore-menu-list">
             {menu_list.map((item, index) => (
                 <div onClick={()=>setCategories(prev=>prev===item.menu_name?"All":item.menu_name)} className="explore-menu-item" key={index}>
-                    <img className={categories===item.menu_name?"active":""}src={`http://localhost:420/images/${item.image}`} alt={item.name} />
+                    <img className={categories===item.menu_name?"active":""}src={`https://food-delivery-backend-bu4t.onrender.com/images/${item.image}`} alt={item.name} />
                     <h3>{item.menu_name}</h3>
                     
                 </div>
