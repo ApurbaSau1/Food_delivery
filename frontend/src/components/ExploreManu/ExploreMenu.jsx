@@ -8,7 +8,7 @@ const [menu_list,setMenuList] = useState([]);
 
 const fetchMenuList = async () => {
     try {
-        const response = await axios.get('http://localhost:420/api/food/listmenu');
+        const response = await axios.get('https://food-delivery-backend-bu4t.onrender.com/api/food/listmenu');
         if (response.status === 200) {
             setMenuList(response.data.menu);
             // console.log(response.data.menu);
